@@ -14,6 +14,11 @@
 		F6F2E2631B0F203E00C5944A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F2E2621B0F203E00C5944A /* Images.xcassets */; };
 		F6F2E2661B0F203E00C5944A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F2E2641B0F203E00C5944A /* LaunchScreen.xib */; };
 		F6F2E2721B0F203E00C5944A /* UPPayHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F2E2711B0F203E00C5944A /* UPPayHelperTests.m */; };
+		F6F2E2821B0F21C500C5944A /* libUPPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F2E2811B0F21C500C5944A /* libUPPayPlugin.a */; };
+		F6F2E2851B0F21E400C5944A /* UPPayHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6F2E2841B0F21E400C5944A /* UPPayHelper.mm */; };
+		F6F2E2881B0F270B00C5944A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F2E2871B0F270B00C5944A /* Security.framework */; };
+		F6F2E28A1B0F274900C5944A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F2E2891B0F274900C5944A /* QuartzCore.framework */; };
+		F6F2E28C1B0F27FC00C5944A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F6F2E28B1B0F27FC00C5944A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		F6F2E26B1B0F203E00C5944A /* UPPayHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UPPayHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F2E2701B0F203E00C5944A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F2E2711B0F203E00C5944A /* UPPayHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPPayHelperTests.m; sourceTree = "<group>"; };
+		F6F2E27E1B0F21C500C5944A /* UPPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPlugin.h; sourceTree = "<group>"; };
+		F6F2E27F1B0F21C500C5944A /* UPPayPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPluginDelegate.h; sourceTree = "<group>"; };
+		F6F2E2811B0F21C500C5944A /* libUPPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUPPayPlugin.a; sourceTree = "<group>"; };
+		F6F2E2831B0F21E400C5944A /* UPPayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayHelper.h; sourceTree = "<group>"; };
+		F6F2E2841B0F21E400C5944A /* UPPayHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UPPayHelper.mm; sourceTree = "<group>"; };
+		F6F2E2861B0F223B00C5944A /* UPPayConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPPayConfigure.h; sourceTree = "<group>"; };
+		F6F2E2871B0F270B00C5944A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F6F2E2891B0F274900C5944A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F6F2E28B1B0F27FC00C5944A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F2E28A1B0F274900C5944A /* QuartzCore.framework in Frameworks */,
+				F6F2E2881B0F270B00C5944A /* Security.framework in Frameworks */,
+				F6F2E2821B0F21C500C5944A /* libUPPayPlugin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,8 @@
 		F6F2E2491B0F203E00C5944A = {
 			isa = PBXGroup;
 			children = (
+				F6F2E2891B0F274900C5944A /* QuartzCore.framework */,
+				F6F2E2871B0F270B00C5944A /* Security.framework */,
 				F6F2E2541B0F203E00C5944A /* UPPayHelper */,
 				F6F2E26E1B0F203E00C5944A /* UPPayHelperTests */,
 				F6F2E2531B0F203E00C5944A /* Products */,
@@ -81,6 +100,7 @@
 		F6F2E2541B0F203E00C5944A /* UPPayHelper */ = {
 			isa = PBXGroup;
 			children = (
+				F6F2E27B1B0F21C500C5944A /* UPPay_v3.0.3 */,
 				F6F2E2591B0F203E00C5944A /* AppDelegate.h */,
 				F6F2E25A1B0F203E00C5944A /* AppDelegate.m */,
 				F6F2E25C1B0F203E00C5944A /* ViewController.h */,
@@ -117,6 +137,44 @@
 				F6F2E2701B0F203E00C5944A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6F2E27B1B0F21C500C5944A /* UPPay_v3.0.3 */ = {
+			isa = PBXGroup;
+			children = (
+				F6F2E27C1B0F21C500C5944A /* sdk */,
+				F6F2E2831B0F21E400C5944A /* UPPayHelper.h */,
+				F6F2E2841B0F21E400C5944A /* UPPayHelper.mm */,
+				F6F2E2861B0F223B00C5944A /* UPPayConfigure.h */,
+				F6F2E28B1B0F27FC00C5944A /* README.md */,
+			);
+			path = UPPay_v3.0.3;
+			sourceTree = "<group>";
+		};
+		F6F2E27C1B0F21C500C5944A /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				F6F2E27D1B0F21C500C5944A /* inc */,
+				F6F2E2801B0F21C500C5944A /* libs */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		F6F2E27D1B0F21C500C5944A /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				F6F2E27E1B0F21C500C5944A /* UPPayPlugin.h */,
+				F6F2E27F1B0F21C500C5944A /* UPPayPluginDelegate.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		F6F2E2801B0F21C500C5944A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F6F2E2811B0F21C500C5944A /* libUPPayPlugin.a */,
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +279,9 @@
 			files = (
 				F6F2E25E1B0F203E00C5944A /* ViewController.m in Sources */,
 				F6F2E25B1B0F203E00C5944A /* AppDelegate.m in Sources */,
+				F6F2E28C1B0F27FC00C5944A /* README.md in Sources */,
 				F6F2E2581B0F203E00C5944A /* main.m in Sources */,
+				F6F2E2851B0F21E400C5944A /* UPPayHelper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +409,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UPPayHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UPPayHelper/UPPay_v3.0.3/sdk/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,6 +424,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UPPayHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UPPayHelper/UPPay_v3.0.3/sdk/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

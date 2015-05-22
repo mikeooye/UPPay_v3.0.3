@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UPPayHelper.h"
 
 @interface ViewController ()
 
+- (IBAction)payAction:(id)sender;
 @end
 
 @implementation ViewController
@@ -24,4 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)payAction:(id)sender {
+    
+    [[UPPayHelper sharedInstance] payWithOrderName:@"test" price:@"100" completion:^(BOOL success) {
+        
+    }];
+}
 @end
